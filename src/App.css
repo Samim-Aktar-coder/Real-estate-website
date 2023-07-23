@@ -1,0 +1,124 @@
+/*!========== REUSABLE CSS CLASSES ============ */
+.section {
+    padding-block: 6rem 4rem;
+    padding-inline: 4rem;
+}
+
+.padding-x {
+    padding-inline: 4rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex__img {
+    flex: 1;
+}
+
+.img__container {
+    width: 30rem;
+    height: 35rem;
+    border: 10px solid #363636;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    overflow: hidden;
+    margin-inline: auto;
+}
+
+.flex__info {
+    flex: 1;
+}
+
+.section__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--color-orange);
+}
+
+.section__subtitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-blue);
+}
+
+.main__btn {
+    background: linear-gradient(148deg, #5d7cff 0%, #002eea 100%);
+    color: white;
+    padding: .6rem 1.3rem;
+    border-radius: .3rem;
+    font-size: .85rem;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.main__btn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1100px) {
+    .section {
+        padding-inline: 2rem;
+    }
+
+    .padding-x {
+        padding-inline: 2rem;
+    }
+
+    .img__container {
+        width: 25rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .flex {
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .section__title {
+        font-size: 1.4rem;
+    }
+
+    .section__subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .img__container {
+        width: 18rem;
+        height: 23rem;
+    }
+
+    .section {
+        padding-inline: 1rem;
+    }
+
+    .padding-x {
+        padding-inline: 1rem;
+    }
+
+}
+
+@media screen and (max-width:310px) {
+    .img__container {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .section__title {
+        font-size: 1.2rem;
+    }
+
+    .section__subtitle {
+        font-size: 1.5rem;
+    }
+}

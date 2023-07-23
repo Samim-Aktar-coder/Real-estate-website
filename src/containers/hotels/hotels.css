@@ -1,0 +1,144 @@
+.hotels {
+    position: relative;
+}
+
+
+
+.swiper-wrapper {
+    padding: 2rem 0rem;
+    overflow: visible;
+}
+
+.swiper {
+    position: static !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 25% !important;
+    left: unset !important;
+}
+
+.swiper-button-next {
+    right: 5rem !important;
+}
+
+.swiper-button-prev {
+    right: 8rem !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #0123ad;
+    font-size: 1rem !important;
+    font-weight: bold;
+    padding-inline: .7rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: .2rem;
+    background-color: #d5deff;
+    box-shadow: 0 0 10px #c4d0ff;
+}
+
+.hotel__item {
+    /* border: 1px solid green; */
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.hotel__item:hover {
+    background: linear-gradient(#f3f5ff, #d5deff);
+    box-shadow: #c4d0ff 0px 20px 25px -5px, #ccd6ff 0px 10px 10px -5px;
+    transform: scale(1.01);
+}
+
+.hotel__item .price {
+    color: var(--color-gray);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.hotel__item .price span {
+    color: var(--color-orange);
+}
+
+.hotel__item .name {
+    color: var(--text-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-block: .5rem;
+}
+
+.hotel__item .address {
+    color: var(--color-gray);
+    font-size: .7rem;
+}
+
+@media screen and (max-width:850px) {
+
+    .hotel__item {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: unset !important;
+        bottom: 5% !important;
+    }
+
+    .swiper-button-next {
+        right: 45% !important;
+    }
+
+    .swiper-button-prev {
+        right: 55% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hotel__item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hotel__item {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    .swiper-button-next {
+        right: 45% !important;
+    }
+
+    .swiper-button-prev {
+        right: 55% !important;
+    }
+
+    .hotel__item .price{
+        font-size: 1.1rem;
+    }
+
+    .hotel__item .name {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .hotel__item {
+        width: 90%;
+    }
+
+    .swiper-button-next {
+        right: 30% !important;
+    }
+
+    .swiper-button-prev {
+        left: 30% !important;
+    }
+}

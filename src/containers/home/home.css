@@ -1,0 +1,163 @@
+.home {
+    /* height: 100vh; */
+    padding-top: 6rem;
+    background-color: #151515;
+    position: relative;
+}
+
+.white__gradient {
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    filter: blur(120px);
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.home__title {
+    position: relative;
+    width: 470px;
+}
+
+.home__title span {
+    position: relative;
+    font-size: 3.7rem;
+    line-height: 4rem;
+    font-weight: 600;
+    z-index: 4;
+}
+
+.home__circle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: linear-gradient(148deg, rgb(216, 129, 0) 0%, rgb(255, 195, 85) 100%);
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    z-index: 1;
+}
+
+.home__text {
+    font-size: .9rem;
+    color: var(--color-gray);
+    margin-block: 3rem;
+    width: 400px;
+}
+
+.home__input {
+    background-color: white;
+    width: 420px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 1.5rem;
+    padding: .5rem 1rem;
+    border: 4px solid #ccc;
+    border-radius: .3rem;
+    margin-bottom: 3rem;
+}
+
+.home__input i {
+    position: absolute;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-blue);
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.home__input input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-left: 1.7rem;
+}
+
+.home__stats {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.home__stats .num {
+    font-size: 2rem;
+}
+
+.stat__item .num span {
+    color: var(--color-orange);
+}
+
+.stat__item .text {
+    font-size: .8rem;
+    color: var(--color-gray);
+}
+
+@media screen and (max-width:950px) {
+    .home__stats {
+        justify-content: center;
+    }
+
+    .stat__item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home__title {
+        width: 100%;
+    }
+
+    .home__text {
+        width: 100%;
+    }
+
+    .home__title span {
+        font-size: 3rem;
+    }
+
+    .home__circle {
+        top: 0;
+        left: 36%;
+    }
+
+    .home__input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .home__circle {
+        top: 0;
+        left: 50%;
+    }
+
+    .home__text {
+        margin-block: 2rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .home__input {
+        gap: 1rem;
+        padding: .5rem .3rem;
+        border: 4px solid #ccc;
+        border-radius: .3rem;
+        margin-bottom: 2rem;
+    }
+
+    .home__circle {
+        left: 60%;
+    }
+    .home__title span{
+        font-size: 2.5rem;
+    }
+    .home__stats .num{
+        font-size: 1.6rem;
+    }
+}
