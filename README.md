@@ -1,4 +1,4 @@
-[![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/Real-estate-website/main/Github%20Banner.png)](https://samim-real-estate-website.netlify.app/)
+[![MasterHead](https://image-link-website.netlify.app/img/real-estate.png)](https://samim-real-estate-website.netlify.app/)
 
 ### Live: [Click Here](https://samim-real-estate-website.netlify.app/)
 
@@ -16,7 +16,7 @@ Tech stack I use to build this app:
 
 ## 🙋‍♂️ Author
 
-- [@SamimAktar](https://github.com/Samim-Aktar-coder)
+- [@SamimAktar](https://github.com/samimaktar-coder)
 
 ## Installation
 
